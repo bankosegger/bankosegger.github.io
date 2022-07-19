@@ -126,13 +126,13 @@ a:hover {
     background-color: #581845;
     color: #fff;
     text-align: left;
-    border-radius: 2px;
-    padding: 16px;
+    border-radius: 1px;
+    padding: 5px;
     position: fixed;
     z-index: 1;
     left: 50%;
     bottom: 30px;
-    font-size: 17px;
+    font-size: 10px;
 }
 
 #snackbar.show {
