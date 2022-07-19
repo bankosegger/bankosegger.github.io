@@ -12,11 +12,12 @@ body {
 
 body .content {
     float: left;
-    max-width: 400px;
+    width: 33.33%;    
     line-height: 180%;
     font-family: "Fira Sans", sans-serif;
     text-align: justify;
-    padding: 20pt;
+    padding: 30px;
+    
 }
     
 body .content a {
@@ -31,11 +32,13 @@ h1 {
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     line-height: 35px;
-    padding: 0px;
+    padding: 20px;
     text-align: justify;
 }
+
+
 
 .all {
     margin: 40px;
@@ -48,6 +51,8 @@ p {
     position: relative;
 }
 
+
+
 .checkbox {
     background-color: transparent;
 }
@@ -58,11 +63,13 @@ button {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: #581845;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+    border-radius: 10px;
+    font-family: "Fira Sans", sans-serif;
 }
 
 button:hover,
@@ -110,4 +117,74 @@ a:hover {
     box-shadow: 10px 10px #15181f;
     top: -4px;
     left: 30px;
+}
+
+#snackbar {
+    visibility: hidden;
+    max-width: 250px;
+    margin-left: -125px;
+    background-color: #581845;
+    color: #fff;
+    text-align: left;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
