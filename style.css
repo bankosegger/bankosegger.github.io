@@ -48,6 +48,10 @@ p {
     position: relative;
 }
 
+.checkbox {
+    background-color: transparent;
+}
+
 /*DARKMODE*/
 #toggle {
     -webkit-appearance: none;
