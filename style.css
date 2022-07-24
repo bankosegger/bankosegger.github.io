@@ -11,21 +11,19 @@ body {
 }
 
 body .content {
-    float: left;    
-    width: 25%;
-    height: 300px;
-    position: relative;
-    line-height: 180%;
+    
+    width: 300px;
     font-family: "Fira Sans", sans-serif;
-    text-align: justify;
-    padding: 30px;
+    padding: 10px;
     
 }
     
 body .content a {
+
     color: rgb(196, 141, 141);
     text-decoration: none;
     border-bottom: 1pt solid #8d6d6d;
+    line-height: 25px;
 }
 
 h1 {
@@ -53,8 +51,6 @@ p {
     position: relative;
 }
 
-
-
 .checkbox {
     background-color: transparent;
 }
@@ -62,15 +58,15 @@ p {
 button {
     border: none;
     outline: 0;
-    display: inline-block;
+    
     padding: 8px;
     color: white;
-    background-color: #000000;
+    background-color: #141414;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 20px;
     font-family: "Fira Sans", sans-serif;
 }
 
